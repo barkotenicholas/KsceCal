@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Calculator } from './calculator';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,10 @@ export class AppComponent {
   submit(details: any){
    
 
+  const cal = new Calculator(this.name,this.math,this.eng,this.kisw,this.bio,this.chem,this.biz,this.agri);
+   
+    cal.add()
   
-
+    console.log("This is total :"+cal.display())
   }
 }
