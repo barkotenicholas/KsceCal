@@ -21,27 +21,9 @@ export class AppComponent {
   ho!:string;
 
   submit(details: any){
-    console.log(details)
+   
 
-    console.log(this.name)
-
-    console.log(this.math)
-
-    console.log(this.geo)
-
-    console.log(this.kisw)
-
-    console.log(this.eng)
-
-    console.log(this.his)
-
-    console.log(this.geo)
-
-    console.log(this.ho)
-
-    console.log(this.agri)
-
-    console.log(this.biz)
+  
 
   }
 }
