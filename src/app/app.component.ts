@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-
+  name!: string;
   submit(details: any){
     console.log(details)
+    console.log(this.name)
   }
 }
