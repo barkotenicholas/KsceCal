@@ -9,23 +9,395 @@
 </head>
 
 <body>
-  <h1 class="text-center m-5">Ksce gpa grade calculator</h1>
+  <h1 class="text-center m-5">KCSE GPA CALCULATOR</h1>
+  <hr class="p-1">
+<h2 class = "text-centre mb-5 ">Ever wonder how to calculate GPA? This free calculator may help your raise your GPA. Middle schools, high schools, colleges, and universities use it every day! </h2>
 
 
+<!-- <h1 class="mt-5">GPA Formula: <strong>(Grades * credits)/Credits = GPA</strong> </h1>
 
+<Ul>
+  <LI>A = 4.0</LI>
+  <LI>B= 3.0</LI>
+  <LI>C = 2.0</LI>
+  <LI>D=1.0</LI>
+</Ul> -->
   <div class=" d-flex justify-content-center">
 
     <form #details="ngForm" (ngSubmit)="submit(details)">
 
       <div class="form-group col-xs-4">
         <label for="name">Enter Name :</label>
+        <br>
         <input [(ngModel)]="name"  type="text" class="form-control" id="name"  placeholder="Enter candidates Name" name="name" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
 
+      <!-- <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Totals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td> <select >
+              <option value="A">Mathematics</option>
+              <option value="A-">English</option>
+              <option value="B">Kiswahili</option>
+              <option value="B+">Biology</option>
+              <option value="B-">Chemistry</option>
+              <option value="C+">Physics</option>
+              <option value="C">HomeScience</option>
+              <option value="C-">CRE</option>
+              <option value="D+">Business</option>
+              <option value="D">Geography</option>
+              <option value="D-">History</option>
+            </select> </td>
+            <td><select>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B">B</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+            </select></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td> <select>
+              <option value="A">Mathematics</option>
+              <option value="A-">English</option>
+              <option value="B">Kiswahili</option>
+              <option value="B+">Biology</option>
+              <option value="B-">Chemistry</option>
+              <option value="C+">Physics</option>
+              <option value="C">HomeScience</option>
+              <option value="C-">CRE</option>
+              <option value="D+">Business</option>
+              <option value="D">Geography</option>
+              <option value="D-">History</option>
+            </select> </td>
+            <td><select>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B">B</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+            </select></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td> <select>
+              <option value="A">Mathematics</option>
+              <option value="A-">English</option>
+              <option value="B">Kiswahili</option>
+              <option value="B+">Biology</option>
+              <option value="B-">Chemistry</option>
+              <option value="C+">Physics</option>
+              <option value="C">HomeScience</option>
+              <option value="C-">CRE</option>
+              <option value="D+">Business</option>
+              <option value="D">Geography</option>
+              <option value="D-">History</option>
+            </select> </td>
+            <td><select>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B">B</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+            </select></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+       -->
+      <!-- second option -->
+
       <div class="form-group input-group mb-3">
-        <div class="input-group-append me-4">
+
+        <table class="table">
+
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Grade</th>
+              <th scope="col">Totals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td >
+                <label class="input-group-text" for="math">Mathematics :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td >
+                <label class="input-group-text" for="english">English :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >
+                <label class="input-group-text" for="kiswahili">Kiswahili :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td >
+                <label class="input-group-text" for="math">Biology :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td >
+                <label class="input-group-text" for="math">Chemistry :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td >
+                <label class="input-group-text" for="math">Physics :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td >
+                <label class="input-group-text" for="math">Business :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td >
+                <label class="input-group-text" for="math">HomeScience :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td >
+                <label class="input-group-text" for="math">Agriculture :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td >
+                <label class="input-group-text" for="math">History :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td >
+                <label class="input-group-text" for="math">Geography :</label>
+              </td>
+              <td>
+                <select>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B">B</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+        
+                </select>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+        <!-- <div class="input-group-append me-4">
           <label class="input-group-text" for="math">Mathematics :</label>
         </div>
         <select [(ngModel)]="math" class="custom-select p-2" id="math" name="math">
@@ -249,7 +621,7 @@
           <option value="D">D</option>
           <option value="D-">D-</option>
 
-        </select>
+        </select> -->
 
       </div>
 
