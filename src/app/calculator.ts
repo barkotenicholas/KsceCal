@@ -15,11 +15,13 @@ export class Calculator {
     university4!: string;
     university5!: string;
     university6!: string;
+    unicourse!:string[];
     tech1!: string;
     tech2!: string;
     tech3!: string;
     tech4!: string;
     tech5!: string;
+    techcourse!:string[];
     constructor(name:string,math:string,eng:string,kisw:string,bio : string,chem :string, biz:string,agri:string){
         this.name = name;
         this.math = math;
@@ -43,7 +45,35 @@ export class Calculator {
         this.tech3 = "Kisumu national polytechnic"
         this.tech4 = "kabete polytechnic"
         this.tech5 = "nakuru polytechnic"
-        
+
+
+        this.unicourse.push("Bachelor of science (Civil eng)")
+        this.unicourse.push("Bachelor of science (Electrical eng)")
+        this.unicourse.push("Bachelor of science (Medicine)")
+        this.unicourse.push("Bachelor of science (Real estate)")
+        this.unicourse.push("Bachelor of science (Computer science)")
+        this.unicourse.push("Bachelor of science (Geomatics engineeing)")
+        this.unicourse.push("Bachelor of science (Analytical chem)")
+
+
+        this.unicourse.push("Bachelor of science (Information Technology)")
+        this.unicourse.push("Bachelor of science (Analytical chem)")
+        this.unicourse.push("Bachelor of science (Industrial chem)")
+
+        this.unicourse.push("Bachelor of arts (Food science)")
+        this.unicourse.push("Bachelor of arts (Business administration)")
+        this.unicourse.push("Bachelor of arts (Bcom)")
+        this.unicourse.push("Bachelor of arts (Food science)")
+
+        this.techcourse.push("Diploma in Nursing")
+        this.techcourse.push("Diploma in WoodWork")
+        this.techcourse.push("Diploma in Information techology")
+        this.techcourse.push("Diploma in Electical enginering")
+        this.techcourse.push("Diploma in Civil enginering")
+        this.techcourse.push("Diploma in Toursim ")
+        this.techcourse.push("Diploma in Catering")
+
+
     }
 
 
