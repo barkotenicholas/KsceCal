@@ -15,6 +15,11 @@ export class Calculator {
     university4!: string;
     university5!: string;
     university6!: string;
+    tech1!: string;
+    tech2!: string;
+    tech3!: string;
+    tech4!: string;
+    tech5!: string;
     constructor(name:string,math:string,eng:string,kisw:string,bio : string,chem :string, biz:string,agri:string){
         this.name = name;
         this.math = math;
@@ -32,6 +37,12 @@ export class Calculator {
         this.university4 ='Egerton university'
         this.university5 ='Moi university eldoret'
         this.university6 ='Jaramogi oginga odinga'
+
+        this.tech1 = "Nyeri polytechnic"
+        this.tech2 = "RiftValley Institute of Science and technology"
+        this.tech3 = "Kisumu national polytechnic"
+        this.tech4 = "kabete polytechnic"
+        this.tech5 = "nakuru polytechnic"
         
     }
 
