@@ -9,6 +9,12 @@ export class Calculator {
     biz:string;
     agri:string
     sum: number;
+    university1!: string;
+    university2!: string;
+    university3!: string;
+    university4!: string;
+    university5!: string;
+    university6!: string;
     constructor(name:string,math:string,eng:string,kisw:string,bio : string,chem :string, biz:string,agri:string){
         this.name = name;
         this.math = math;
@@ -19,6 +25,14 @@ export class Calculator {
         this.biz = biz;
         this.agri = agri;
         this.sum = 0
+
+        this.university1 ='Jomo kenyatta university of agriculture and technology'
+        this.university2 ='kenyatta university '
+        this.university3 ='University of Nairobi'
+        this.university4 ='Egerton university'
+        this.university5 ='Moi university eldoret'
+        this.university6 ='Jaramogi oginga odinga'
+        
     }
 
 
@@ -289,4 +303,12 @@ export class Calculator {
         return this.sum;
     }
     
+
+    showUnivesity(){
+
+       
+
+
+
+    }
 }
