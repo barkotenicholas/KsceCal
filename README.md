@@ -1,6 +1,10 @@
-# Kcse
+# KCSE GPA CALCULATOR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+## By Group Two Members - 17th March 2022
+
+This is a project is a free calculator may help your raise your GPA.Middle schools, high schools, colleges, and universities use it every day!
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
 ## Development server
 
@@ -24,4 +28,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
+## Email: priscah.limo@student.moringaschool.com
+## Email: nicholas.kebut@student.moringaschool.com
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## License
+
+MIT License
+
+## Copyright @Group_2 2022
